@@ -20,3 +20,7 @@ apt-get install nodejs
 apt-get install npm
 
 npm install d3
+
+nodejs --version
+npm --version
+
