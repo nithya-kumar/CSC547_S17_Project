@@ -40,3 +40,7 @@ D3
 Scipy
 Gephi,
 Flask
+
+
+Every python package listed above is included in Anaconda. We can find it here:
+https://www.continuum.io/downloads
