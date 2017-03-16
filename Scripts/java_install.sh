@@ -1,6 +1,8 @@
-sudo apt-get install java-common
-sudo add-apt-repository ppa:openjdk-r/ppa
-sudo apt-get update
-sudo apt-get install openjdk-8-jdk
-
-
+#!/bin/bash
+clear
+echo "Begin java installation"
+apt-get update
+apt-get upgrade
+apt-get install default-jre
+apt-get install default-jdk
+java -version
