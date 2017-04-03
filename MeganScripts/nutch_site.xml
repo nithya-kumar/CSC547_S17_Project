@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+<name>http.agent.name</name>
+<value>nutch-solr-integration</value>
+</property>
+<property>
+<name>generate.max.per.host</name>
+<value>100</value>
+</property>
+<property>
+<name>http.content.limit</name>
+<value>100000</value>
+</property>
+<property>
+<name>plugin.includes</name>
+<value>protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|scoring-opic|indexer-solr|urlnormalizer-(pass|regex|basic)</value>
+</property>
+</configuration>
