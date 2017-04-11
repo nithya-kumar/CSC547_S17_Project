@@ -1,0 +1,41 @@
+1. Download Ubuntu ISO from ubuntu website.
+2. Install qemu-kvm and virt-manager
+	Command - 
+	sudo apt-get install qemu-kvm
+	sudo apt-get install virt-manager
+
+3. Create Qemu Image 
+	Command - 	
+	qemu-img create -f qcow2 /tmp/ubuntu_team2.qcow2 10G
+
+4. Use virt-install to start the image installation
+	Command - 
+	virt-install --virt-type kvm --name ubuntu --ram 1024 cdrom=/path/to/iso/ubuntu64.iso --disk /tmp/ubuntu_team2.qcow2,format=qcow2 --network network=default —graphics vnc,listen=0.0.0.0 --noautoconsole --os-type=linux
+
+5. Use Virt-Manager GUI to complete ubuntu installation.
+
+6. After Completing the installation, Start the VM, Login into it and install various required packages
+
+	Commands-
+	sudo apt-get install openssh-server
+	sudo apt-get install cloud-init cloud-utils
+	dpkg-reconfigure cloud-init
+
+7. Shutdown the instance.
+	Command - 
+	virsh stop ubuntu
+
+8. Cleanup Mac Address
+	Command - 
+	virt-sysprep -d ubuntu
+	
+
+9. Undefine the libvirt domain
+	Command - 
+	virsh undefine ubuntu
+
+10. Compress created image
+	Command - 
+	virt-sparsify --compress /tmp/ubuntu_team2.qcow2 ubuntu_team2.qcow2
+
+11. Upload the newly created image.
