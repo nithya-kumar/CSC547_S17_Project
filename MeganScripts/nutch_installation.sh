@@ -8,7 +8,7 @@ ln -s /opt/apache-nutch-2.2.1/ nutch
 
 #Compiling nutch
 cd /opt/nutch
-/opt/ant/bin/ant rumtime
+/opt/ant/bin/ant runtime
 
 #Crawling the web
 cd /opt/nutch/runtime/local
