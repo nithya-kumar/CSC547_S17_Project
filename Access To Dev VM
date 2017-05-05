@@ -4,4 +4,4 @@ A client can communicate with the Database VM on only 2 ports : Cassandra Thrift
 
 On the Developer VM, changes are made to ssh configuration files to ensure that clients can log into the machine.
 The associated private IP address and floating IP address is added as a ListenAddress and Password based authentication has been setup through the /etc/ssh/sshd_config file.
-There is provision for user to setup Key-based authentication after he logs into the machine.
+Client is authorized to setup Key-based authentication after he logs into his virtual machine.
