@@ -1,7 +1,0 @@
-For enhanced security, access to the Analytics Cloud Platform should be restricted. 
-Firewall rules have been configured to ensure that a client cannot log into the Database VM machine. 
-A client can communicate with the Database VM on only 2 ports : Cassandra Thrift Client port 9160 and the Postgresql service can be accessed on port 5432.
-
-On the Developer VM, changes are made to ssh configuration files to ensure that clients can log into the machine.
-The associated private IP address and floating IP address is added as a ListenAddress and Password based authentication has been setup through the /etc/ssh/sshd_config file.
-Client is authorized to setup Key-based authentication after he logs into his virtual machine.
