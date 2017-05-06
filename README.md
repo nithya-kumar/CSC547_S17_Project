@@ -1,2 +1,7 @@
 # CSC547_S17_Project
-CSC 547 - Cloud Computing Technology Project
+
+# Data Analytics Cloud - Design and Implementation
+
+# Abstract
+As the world becomes increasingly digitized, data volumes are growing exponentially. Extracting information from data has the potential to revolutionize every sector of business. The focus on data analytics is therefore increasing day-by-day. Thus, there arises a need for a flexible data-analytics platform. To address this problem, we harness the power of cloud and virtualization in our project. Our project is focussed on developing a data analytics cloud platform that runs an analytics engine to perform re-structuring and analysis of vague, unstructured data. This report details our design and implementation of this platform. Our platform can be used as an Integrated Development Environment (IDE) to develop and test new algorithms for advanced analytical studies. The main functions of the analytics engine are gathering, filtering, annotating, restructuring and visualizing of data to the end-user. High-performance Intel blade
+server deployed in the Oscar laboratory of North Carolina State University’s Centennial campus has been used as the base machine for cloud stack development. The cloud platform is built on Red Hat Enterprise Linux 7.3 (RHEL 7.3) with OpenStack Platform 10. The SaaS stack is integrated with Apache open source projects and in-house Django applications, each performing its own set of motivated tasks. Our validation results show that our cloud platform successfully gathers (by web crawling), filters, annotates, restructures the data and finally, displays the structured data to the end-user via a user-friendly dashboard thus facilitating him to make informed decisions.
